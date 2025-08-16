@@ -1,5 +1,5 @@
-Ocal OrionLib=loadstring(游戏：HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-本地LBLG=Instance.new("ScreenGui"，getParent)
+ocal OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+local LBLG = Instance.new("ScreenGui", getParent)
 本地LBL=Instance.new("TextLabel"，getParent)
 本地玩家=game.Players.LocalPlayer
 
@@ -14,7 +14,7 @@ LBL.BackgroundTransparency=1
 LBL.BorderColor3=Color3.new(0，0，0)
 LBL.位置=UDim2.new(0.75,0,0.010,0)
 LBL.Size=UDim2.new(0，133，0，30)
-LBL.Font=枚举。字体.哥谭半粗体
+LBL.Font=枚举.Font.GothamSemibold
 LBL.Text="TextLabel"
 LBL.TextColor3=Color3.new(1，1，1)
 LBL.TextScaled=true
@@ -23,7 +23,7 @@ LBL.TextWrapped=true
 LBL.Visible=true
 
 本地FpsLabel=LBL
-本地心跳=游戏：GetService(“RunService”)。心跳
+本地心跳=游戏：GetService("RunService").心跳
 本机LastIteration，开始
 本地FrameUpdateTable={}
 
@@ -33,9 +33,9 @@ LastIteration=tick()
 FrameUpdateTable[Index+1]=(FrameUpdateTable[Index]>=LastIteration-1)和FrameUpdateTable[Index]或nil
 结束
 FrameUpdateTable[1]=LastIteration
-本地当前FPS=(勾选()-开始>=1和#FrameUpdateTable)或(#FrameUpdateTable/(勾选()-开始))
+本地当前FPS=(tick()-开始>=1和#FrameUpdateTable)或(#FrameUpdateTable/(tick()-开始))
 CurrentFPS=CurrentFPS-CurrentFPS%1
-FpsLabel.Text=("北京时间："..操作系统日期("%H").."时"..操作系统日期("%M").."分"..操作系统日期("%S"))
+FpsLabel.Text=("北京时间："..os.date("%H").."时"..操作系统日期("%M").."分"..操作系统日期("%S"))
 结束
 start=tick()
 心跳：连接(HeartbeatUpdate)
@@ -173,47 +173,47 @@ TextDisAppear=true，
 
 游戏。玩家。本地玩家。性格。仿人。JumpPower=值
 
-Ocal OrionLib=loadstring(游戏：HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+结束
 
-本地LBL=Instance.new("TextLabel"，getParent)
+})
 
 选项卡：AddTextbox({
 
-LBLG.Parent=game.CoreGuui
+姓名="移动速度设置"，
 
-LBLG.Enabled=true
+默认值=""，
 
-LBL.Parent=LBLG
-
-LBL.BackgroundTransparency=1
-
-LBL.位置=UDim2.new(0.75,0,0.010,0)
-
-LBL.Font=枚举。字体.哥谭半粗体
-
-LBL.TextColor3=Color3.new(1，1，1)
-
-LBL.TextSize=14
-
-LBL.Visible=true
-
-本地FpsLabel=LBL
-
-本机LastIteration，开始
+TextDisAppear=true，
 
 回调=函数(值)
 
-LastIteration=tick()
+游戏。 玩家。 本地玩家。 性格。 人形行走速度=数值
 
-FrameUpdateTable[Index+1]=(FrameUpdateTable[Index]>=LastIteration-1)和FrameUpdateTable[Index]或nil
+姓名="作者QQ群这里"，
 
-FrameUpdateTable[1]=LastIteration
+})
 
-tab:AddToggle({
+PremiumOnly=false
 
-姓名="夜视"，
+姓名="重力设置"，
 
-心跳：连接(HeartbeatUpdate)
+默认值=""，
+
+姓名="复制作者QQ群"，
+
+回调=函数()
+
+本地当前FPS=(勾选()-开始>=1和#FrameUpdateTable)或(#FrameUpdateTable/(勾选()-开始))
+
+FpsLabel.Text=("北京时间："..操作系统日期("%H").."时"..操作系统日期("%M").."分"..操作系统日期("%S"))
+
+})
+
+本地窗口=OrionLib:MakeWindow({Name="'人脚本'"，HidePremium=false，saveconfig=true，introtext="'人脚本'"，configFolder="'人脚本'"})
+
+游戏：GetService("StarterGuui")：SetCore("SendNotification"，{title="人脚本"；文本="吉吉国王"；持续时间=4；})
+
+回调=函数()
 
 回调=函数(值)
 
@@ -223,7 +223,7 @@ game.Lighting.Ambient=Color3.new(1，1，1)
 
 其他
 
-game.Lighting.Ambient=Color3.new(0，0，0)
+内容="欢迎使用顶尖脚本"，
 
 结束
 
@@ -231,9 +231,6 @@ game.Lighting.Ambient=Color3.new(0，0，0)
 
 })
 
-选项卡：addButton({
+姓名="通用"，
 姓名="飞行"，
-回调=函数()
-loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\70\118\67\80\52\118\72\72\34\41\41\40\41")()
-结束
-})
+callback=函数()
