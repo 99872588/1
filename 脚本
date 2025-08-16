@@ -1,5 +1,5 @@
-ocal OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
-local LBLG = Instance.new("ScreenGui", getParent)
+本地OrionLib=loadstring(游戏：HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()--
+本地LBLG=Instance.new("ScreenGui"，getParent)
 本地LBL=Instance.new("TextLabel"，getParent)
 本地玩家=game.Players.LocalPlayer
 
@@ -14,7 +14,7 @@ LBL.BackgroundTransparency=1
 LBL.BorderColor3=Color3.new(0，0，0)
 LBL.位置=UDim2.new(0.75,0,0.010,0)
 LBL.Size=UDim2.new(0，133，0，30)
-LBL.Font=枚举.Font.GothamSemibold
+LBL.Font=枚举。字体.哥谭半粗体
 LBL.Text="TextLabel"
 LBL.TextColor3=Color3.new(1，1，1)
 LBL.TextScaled=true
@@ -23,7 +23,7 @@ LBL.TextWrapped=true
 LBL.Visible=true
 
 本地FpsLabel=LBL
-本地心跳=游戏：GetService("RunService").心跳
+本地心跳=游戏：GetService(“RunService”)。心跳
 本机LastIteration，开始
 本地FrameUpdateTable={}
 
@@ -33,15 +33,15 @@ LastIteration=tick()
 FrameUpdateTable[Index+1]=(FrameUpdateTable[Index]>=LastIteration-1)和FrameUpdateTable[Index]或nil
 结束
 FrameUpdateTable[1]=LastIteration
-本地当前FPS=(tick()-开始>=1和#FrameUpdateTable)或(#FrameUpdateTable/(tick()-开始))
+本地当前FPS=(勾选()-开始>=1和#FrameUpdateTable)或(#FrameUpdateTable/(勾选()-开始))
 CurrentFPS=CurrentFPS-CurrentFPS%1
-FpsLabel.Text=("北京时间："..os.date("%H").."时"..操作系统日期("%M").."分"..操作系统日期("%S"))
+FpsLabel.Text=("北京时间："..操作系统日期("%H").."时"..操作系统日期("%M").."分"..操作系统日期("%S"))
 结束
 start=tick()
 心跳：连接(HeartbeatUpdate)
-本地窗口=OrionLib:MakeWindow({Name="'人脚本'"，HidePremium=false，saveconfig=true，introtext="'人脚本'"，configFolder="'人脚本'"})
+本地窗口=OrionLib:MakeWindow({Name="鑫"，HidePremium=false，saveconfig=true，introtext=""，ConfigFolder=""})
 
-游戏：GetService("StarterGuui")：SetCore("SendNotification"，{title="人脚本"；文本="吉吉国王"；持续时间=4；})
+游戏：GetService("StarterGuui")：SetCore("SendNotification"，{title="一样"；文本="吉吉国王"；持续时间=4；})
 
 本地关于=窗口：MakeTab({
 姓名="公告"，
@@ -49,10 +49,10 @@ icon="rbxassetid://16060333448"，
 PremiumOnly=false
 
 })
-
-关于：addParagraph("作者QQ群856201787")
+--
+about:addParagraph("作者QQ群1054391255")--
 关于：addParagraph("qq群856201787")
-关于：addParagraph("作者入")
+关于：addParagraph("作者鑫耀")
 关于：addParagraph("顶尖脚本集")
 
 本地选项卡=窗口：MakeTab({
@@ -63,7 +63,7 @@ icon="rbxassetid://16060333448"，
 
 PremiumOnly=false
 
-})
+})--
 
 选项卡：addButton({
 
@@ -71,32 +71,32 @@ PremiumOnly=false
 
 回调=函数()
 
-固定夹板(“856201787”)
+固定夹板(“1054391255”)
 
 结束
 
 })
-
+--
 选项卡：addButton({
 
 姓名="复制QQ群"，
 
 回调=函数()
 
-固定夹板(“856201787”)
+固定夹板(“1054391255”)
 
 结束
 
-})
+})--
 
 OrionLib:MakeNotification({
-姓名="入"，
-内容="欢迎使用顶尖脚本"，
+姓名="鑫耀"，
+内容="泥毫"，
 image="rbxassetid://16060333448"，
 时间=2
 
 })
-
+--
 本地选项卡=窗口：MakeTab({
 
 姓名="通用"，
@@ -105,14 +105,14 @@ icon="rbxassetid://16060333448"，
 
 PremiumOnly=false
 
-})
+})--
 
 本地节=制表符：AddSection({
 
-姓名="靓坤创作"
+姓名="小猫鑫耀创作"
 
 })
-
+--
 选项卡：AddSlider({
 
 姓名="移动速度"，
@@ -135,7 +135,7 @@ ValueName="数值"，
 
 结束
 
-})
+})--
 
 选项卡：AddSlider({
 
@@ -175,45 +175,45 @@ TextDisAppear=true，
 
 结束
 
-})
+本地LBLG=Instance.new("ScreenGui"，getParent)
 
-选项卡：AddTextbox({
+本地玩家=game.Players.LocalPlayer
 
-姓名="移动速度设置"，
+LBLG.Name="LBLG"
 
-默认值=""，
+LBLG.ZIndexBehavior=枚举.ZIndexBehavior.Sibling
+
+LBL.Name="LBL"
+
+LBL.BackgroundColor3=Color3.fromRGB(0，255，0)
+
+LBL.BorderColor3=Color3.new(0，0，0)
+
+LBL.Size=UDim2.new(0，133，0，30)
+
+LBL.Text="TextLabel"
+
+LBL.TextScaled=true
+
+LBL.TextWrapped=true
+
+本地关于=窗口：MakeTab({
 
 TextDisAppear=true，
 
 回调=函数(值)
 
-游戏。 玩家。 本地玩家。 性格。 人形行走速度=数值
+game.Workspace.Gravity=Value
+
+关于：addParagraph("qq群856201787")
+
+关于：addParagraph("顶尖脚本集")
+
+本地选项卡=窗口：MakeTab({
 
 姓名="作者QQ群这里"，
 
-})
-
-PremiumOnly=false
-
-姓名="重力设置"，
-
-默认值=""，
-
-姓名="复制作者QQ群"，
-
-回调=函数()
-
-本地当前FPS=(勾选()-开始>=1和#FrameUpdateTable)或(#FrameUpdateTable/(勾选()-开始))
-
-FpsLabel.Text=("北京时间："..操作系统日期("%H").."时"..操作系统日期("%M").."分"..操作系统日期("%S"))
-
-})
-
-本地窗口=OrionLib:MakeWindow({Name="'人脚本'"，HidePremium=false，saveconfig=true，introtext="'人脚本'"，configFolder="'人脚本'"})
-
-游戏：GetService("StarterGuui")：SetCore("SendNotification"，{title="人脚本"；文本="吉吉国王"；持续时间=4；})
-
-回调=函数()
+icon="rbxassetid://16060333448"，
 
 回调=函数(值)
 
@@ -223,14 +223,18 @@ game.Lighting.Ambient=Color3.new(1，1，1)
 
 其他
 
-内容="欢迎使用顶尖脚本"，
+game.Lighting.Ambient=Color3.new(0，0，0)
 
 结束
 
 结束
 
 })
-
-姓名="通用"，
+--
+选项卡：addButton({
 姓名="飞行"，
-callback=函数()
+回调=函数()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\70\118\67\80\52\118\72\72\34\41\41\40\41")()
+结束
+})
+--
