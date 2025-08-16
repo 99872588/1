@@ -1,0 +1,8 @@
+本地脚本Url="https://github.com/DevSloPo/Local-player/raw/main/player.luau"
+本地成功，响应=pcall(函数()
+本地scriptContent=game:HttpGet(scriptUrl，true)
+返回loadstring(scriptContent)()
+结束)
+如果不成功那么
+game:GetService("传送服务")：传送(game.placeId)
+结束
